@@ -228,6 +228,23 @@ h3 {
     width: 90%;
     margin: 0 auto;
   }
+  
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .bio {
+    text-align: left;
+    line-height: 1.75;
+  }
+
+  .bio-image {
+    float: right;
+    max-width: 35%;
+  }
+
   .main-nav {
     text-align: center;
   }
