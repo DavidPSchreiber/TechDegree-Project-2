@@ -1,0 +1,323 @@
+/* Web Fonts------------------ */
+
+html {
+    box-sizing: border-box;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0px !important;
+}
+
+body {
+  margin: 0;
+  font-family: 'Baloo Tammudu 2', cursive;
+  letter-spacing: .07em;
+    box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  padding: 0 !important;
+}
+
+h1,
+h2,
+h3,
+a {
+  text-align: center;
+}
+
+/* ------------------ Navigation ----- */
+
+.name {
+  text-align: center;
+  margin: 0;
+}
+
+.main-header {
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.main-nav a:hover {
+  color: #32CD32;
+}
+
+.main-nav a:visited {
+  color: darkcyan;
+}
+
+.main-nav {
+  margin-bottom: 50px;
+}
+
+/* Link styles*/
+
+a {
+  text-decoration: none;
+  color: #F65314;
+}
+
+a:hover {
+  color: #32CD32;
+}
+
+a:visited {
+  color: darkcyan;
+}
+
+/* ------------------ Main ----- */
+
+.primary-container,
+.secondary-container,
+.tertiary-container {
+    overflow: auto;
+}
+
+
+.main-header {
+  background-color: #99ffff;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  text-decoration: none;
+  margin-bottom: 1.5em;
+}
+
+.bio {
+  display: block;
+  margin-left: .5em;
+  padding-left: .5em;
+  padding-right: 1em;
+  padding-bottom: .25em;
+}
+
+h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.bio-image {
+  background-color: #99ffff;
+  padding-top: 1.0em;
+  padding-bottom: .5em;
+  padding-left: 15px;
+  float: none;
+  display: block;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  border-bottom: 4px solid purple;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.marketing-image, .search-image, .travel-image, .favorites-image, .gallery-images, .calculator-image {
+  display: block;
+  padding-top: 1.0em;
+  padding-bottom: .5em;
+  padding-left: 15px;
+  float: none;
+  padding: 15px;
+  margin: 10px auto 10px auto;
+  border-bottom: 4px solid purple;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.marketing h3 {
+  text-align: center;
+}
+
+.marketing p, .search p, .travel p, .favorite-spots p, .photo-gallery p, .favorite-spots p {
+
+  display: block;
+  padding-left: 10px;
+  padding-right: 0;
+  margin: 0 auto 0 auto;
+}
+
+
+.search-page {
+  display: block;
+  padding-top: 1em;
+  padding-bottom: .5em;
+  padding-left: 20px;
+  float: none;
+  margin-top: 15px;
+  margin-right: 5px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  border: solid 2px #d9e4ea;
+}
+
+
+.travel h3 {
+  text-align: center;
+}
+
+
+
+.favorite-spots h3 {
+  text-align: center;
+}
+
+
+
+.calculator h3 {
+  text-align: center;
+}
+
+
+.get-in-touch {
+  display: block;
+  background-color: #99ffff;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  text-decoration: none;
+}
+
+.get-in-touch h3 {
+  text-align: center;
+}
+
+.get-in-touch p {
+  display: block;
+  margin-left: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: .25em;
+    text-align: center;
+}
+
+.get-in-touch ul {
+  display: block;
+  text-align: center;
+}
+
+.main-footer {
+    overflow: auto;
+}
+
+.main-footer .name {
+  padding-right: 0;
+    width: 50%;
+    float: left;
+}
+
+.main-footer li {
+  text-align: center;
+}
+
+.main-footer a {
+     width: 50%;
+    float: right;
+}
+
+.footer nav {
+  display: inline-block;
+}
+
+
+
+/* -----------Media Queries-------- */
+
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-nav {
+    text-align: center;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  .marketing {
+    float: left;
+      width: 50%;
+  }
+
+  .search {
+    float: right;
+      width: 50%;
+  }
+
+  .travel {
+    float: left;
+      width: 50%;
+  }
+
+  .favorite-spots {
+    float: right;
+      width: 50%;
+  }
+
+  .photo-gallery {
+    float: left;
+        width: 50%;
+  }
+
+  .calculator {
+    float: right;
+        width: 50%;
+  }
+
+  .get-in-touch {
+    display: block;
+    padding-top: 1.5em;
+  overflow: auto;
+    width: 100%;
+  }
+
+  .get-in-touch ul {
+    display: block;
+    text-align: center;
+  }
+
+  .get-in-touch li {
+    line-height: .75em;
+    padding: .25em;
+    text-align: center;
+    margin-top: .25em;
+  }
+
+  .main-footer .name {
+    display: block;
+    padding: 5px;
+    padding-right: 0;
+    margin: 1em;
+  }
+
+  .main-footer li {
+    text-align: center;
+  }
+
+  .main-footer .name {
+    float: left;
+    padding: inherit;
+  }
+
+  .main-footer a {
+    float: right;
+    padding: .5em;
+    margin: .5em;
+  }
+
+  .footer nav {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 80%;
+    max-width: 1150px;
+  }
+}
+
+/* -------Float clearfix ----------- */

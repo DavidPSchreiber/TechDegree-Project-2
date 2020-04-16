@@ -1,2 +1,2 @@
-# TechDegree-Project-2
-Unit 2-Technical degree
+# Technicaldegree-project-2
+responsive design assignment
