@@ -21,28 +21,29 @@
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <img src="images/David-Cancun.JPG" alt="Photo of David a Mexican resort" class="bio-image">
-            <p class="bio">Hello there! I'm a front-end developer in the making. I greatly enjoy the elegance and logic of web
-                development. I'm a life-long learner, who never rests on his laurels. With fulfilling careers in motion pictures
-                and subsequently higher education, I'm determined to prove the third time's a charm by embracing front-end
-                development with gusto!</p>
+            <div class="bio-container">
+                <img src="images/David-Cancun.JPG" alt="Photo of David a Mexican resort" class="bio-image">
+                <p class="bio">Hello there! I'm a front-end developer in the making. I greatly enjoy the elegance and logic of web
+                    development. I'm a life-long learner, who never rests on his laurels. With fulfilling careers in motion pictures
+                    and subsequently higher education, I'm determined to prove the third time's a charm by embracing front-end
+                    development with gusto!</p>
+            </div>
+           
         </div>
     </header>
     <!-- .main-header -->
 
-    <div class="main-container">
+    <div class="portfolio-section">
         <!-- six elements of main -->
         <main>
             <section id="portfolio">
                 <h2>
-                    PORTFOLIO
+                    portfolio
                 </h2>
 
                     <div class="marketing">
                         <img src="images/marketing-image.png" alt="image of a marketing webpage" class="marketing-image">
-                        <h3>
-                            Marketing Page
-                        </h3>
+                        <h3>Marketing Page</h3>
                         <p>This project shows the front page of a marketing website meant for a specific business in which I'm
                             interested.</p>
                     </div>
@@ -50,9 +51,7 @@
 
                     <div class="search">
                         <img src="images/search-image.png" alt="data base search engine" class="search-image">
-                        <h3>
-                            Search Page
-                        </h3>
+                        <h3>Search Page</h3>
                         <p>This project searches through a specific database to find information that the user is trying to look up.</p>
                     </div>
                     <!-- end of search div -->
@@ -60,9 +59,7 @@
 
                     <div class="travel">
                         <img src="images/travel-image.png" alt="tells travel times based on different transportation methods" class="travel-image">
-                        <h3>
-                            Travel App
-                        </h3>
+                        <h3>Travel App</h3>
                         <p>This project compares travel times based on different transportation methods and tells you the best one.
                         </p>
                     </div>
@@ -96,32 +93,40 @@
                     </div>
                     <!-- end of calculator section -->
 
-                <!-- end of tertiary-container -->
+                <!-- end of portfolio-section -->
             </section>
         </main>
 
         <div class="get-in-touch">
             <section id="contact">
-            <h3>
-                <center>
-                    CONTACT
-                </center>
-            </h3>
-            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-            <ul class="get-in-touch">
-                <li>
-                    <a href="#">Phone: +1(111)555-1234</a>
-                </li>
-                <li>
-                    <a href="#">Email: email@yoursite.com</a>
-                </li>
-            </ul>
+                <h3>
+                    <center>
+                        CONTACT
+                    </center>
+                </h3>
+                <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+                <ul class="get-in-touch">
+                    <li>
+                        <a href="#">Phone: +1(111)555-1234</a>
+                    </li>
+                    <li>
+                        <a href="#">Email: email@yoursite.com</a>
+                    </li>
+                </ul>
+            </section>
         </div>
         <!-- end of get-in-touch -->
 
         <footer class="main-footer">
             <div class="name">David Schreiber</div>
-            <a href="#">BACK TO TOP</a>
+            <div class="footer-column-right">
+                <a class="footer-link" href="#">back to top</a>
+                <ul class="footer-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </footer>
     </div>
 
