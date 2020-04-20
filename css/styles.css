@@ -117,7 +117,7 @@ h3 {
   transition: all .5s;
 }
 
-.marketing-image, .search-image, .travel-image, .favorites-image, .gallery-images, .calculator-image {
+.marketing-image, .search-image, .travel-image, .favorites-image, .gallery-images, .calculator-image .satisfied-clients-image {
   display: block;
   padding-top: 1.0em;
   padding-bottom: .5em;
@@ -134,7 +134,7 @@ h3 {
   text-align: center;
 }
 
-.marketing p, .search p, .travel p, .favorite-spots p, .photo-gallery p, .favorite-spots p {
+.marketing p, .search p, .travel p, .favorite-spots p, .photo-gallery p, .favorite-spots p .satisfied-clients p {
 
   display: block;
   padding-left: 10px;
@@ -142,7 +142,7 @@ h3 {
   margin: 0 auto 0 auto;
 }
 
-.marketing, .search, .travel, .favorite-spots, .photo-gallery, .favorite-spots, .calculator {
+.marketing, .search, .travel, .favorite-spots, .photo-gallery, .favorite-spots, .calculator, satisfied-clients {
 padding: 10px;
 }
 
@@ -176,7 +176,9 @@ padding: 10px;
 .calculator h3 {
   text-align: center;
 }
-
+.satisfied-clients h3 {
+    text-align: center;
+}
 
 .get-in-touch {
   display: block;
@@ -310,7 +312,10 @@ padding: 10px;
         float: left;
         width: 50%;
     }
-
+    .satisfied-clients {
+        float: left;
+        width: 50%;
+    }
     .get-in-touch {
         display: block;
         padding-top: 1.5em;
@@ -368,6 +373,9 @@ padding: 10px;
     width: 82%;
     max-width: 1150px;
   }
+    .marketing, .search, .travel, .favorite-spots, .photo-gallery, .favorite-spots, .calculator {
+      margin: 0 1em;
+      }
     .marketing {
         float: left;
         width: 30%;
@@ -394,6 +402,10 @@ padding: 10px;
     }
 
     .calculator {
+        float: left;
+        width: 30%;
+    }
+    .satisfied-clients {
         float: left;
         width: 30%;
     }
