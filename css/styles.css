@@ -1,7 +1,7 @@
 /* styled elements */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul {
@@ -13,7 +13,7 @@ body {
   margin: 0;
   font-family: 'Baloo Tammudu 2', cursive;
   letter-spacing: .07em;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
@@ -28,6 +28,21 @@ a {
   text-align: center;
 }
 
+main::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#clients {
+  display: block;
+  margin: 0 auto;
+}
+
+#clients img {
+  display: block;
+  margin: 0 auto;
+}
 
 .name {
   text-align: center;
@@ -39,6 +54,7 @@ a {
   text-decoration: none;
   list-style: none;
 }
+
 /* Link styles*/
 
 .main-nav a:hover {
@@ -54,7 +70,7 @@ a {
 }
 
 .main-nav li {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 a {
@@ -73,13 +89,13 @@ a:visited {
 /* ------------------ end of link styles----- */
 
 #portfolio h2 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .primary-container,
 .secondary-container,
 .tertiary-container {
-    overflow: auto;
+  overflow: auto;
 }
 
 
@@ -117,7 +133,12 @@ h3 {
   transition: all .5s;
 }
 
-.marketing-image, .search-image, .travel-image, .favorites-image, .gallery-images, .calculator-image .satisfied-clients-image {
+.marketing-image,
+.search-image,
+.travel-image,
+.favorites-image,
+.gallery-images,
+.calculator-image {
   display: block;
   padding-top: 1.0em;
   padding-bottom: .5em;
@@ -134,7 +155,12 @@ h3 {
   text-align: center;
 }
 
-.marketing p, .search p, .travel p, .favorite-spots p, .photo-gallery p, .favorite-spots p .satisfied-clients p {
+.marketing p,
+.search p,
+.travel p,
+.favorite-spots p,
+.photo-gallery p,
+.favorite-spots p .satisfied-clients p {
 
   display: block;
   padding-left: 10px;
@@ -142,8 +168,15 @@ h3 {
   margin: 0 auto 0 auto;
 }
 
-.marketing, .search, .travel, .favorite-spots, .photo-gallery, .favorite-spots, .calculator, satisfied-clients {
-padding: 10px;
+.marketing,
+.search,
+.travel,
+.favorite-spots,
+.photo-gallery,
+.favorite-spots,
+.calculator,
+.satisfied-clients {
+  padding: 10px;
 }
 
 
@@ -176,8 +209,9 @@ padding: 10px;
 .calculator h3 {
   text-align: center;
 }
+
 .satisfied-clients h3 {
-    text-align: center;
+  text-align: center;
 }
 
 .get-in-touch {
@@ -198,7 +232,7 @@ padding: 10px;
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: .25em;
-    text-align: center;
+  text-align: center;
 }
 
 .get-in-touch ul {
@@ -207,13 +241,13 @@ padding: 10px;
 }
 
 .main-footer {
-    overflow: auto;
+  overflow: auto;
 }
 
 .main-footer .name {
   padding-right: 0;
-    width: 50%;
-    float: left;
+  width: 50%;
+  float: left;
 }
 
 .main-footer li {
@@ -221,7 +255,7 @@ padding: 10px;
 }
 
 .main-footer a {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .footer nav {
@@ -229,185 +263,223 @@ padding: 10px;
 }
 
 .main-footer .footer-nav {
-    display: none;
+  display: none;
 }
 
-    .main-footer .name {
-        text-align: left;
-        padding: .5em;
-    }
+.main-footer .name {
+  text-align: left;
+  padding: .5em;
+}
 
-    .main-footer .footer-column-right {
-        text-align: right;
-        padding: .5em;
-    }
+.main-footer .footer-column-right {
+  text-align: right;
+  padding: .5em;
+}
 
 
 /* -----------Media Queries-------- */
 
 @media (min-width: 768px) {
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
 
-    .container::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-    .bio-container .bio-image,
-    .bio-container .bio {
-        display: inline-block;
-    }
 
-    .bio {
-        text-align: left;
-        line-height: 1.75;
-        width: 60%;
-        float: left;
-    }
-
-    .bio-image {
-        float: right;
-        width: 40%;
-    }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
     
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-    .main-nav {
-        text-align: center;
-    }
+  .bio-container .bio-image,
+  .bio-container .bio {
+    display: inline-block;
+  }
 
-    .main-nav li {
-        display: inline-block;
-        margin-left: 15px;
-    }
+  .bio {
+    text-align: left;
+    line-height: 1.75;
+    width: 60%;
+    float: left;
+  }
 
-    .marketing {
-        float: left;
-        width: 50%;
-    }
+  .bio-image {
+    float: right;
+    width: 40%;
+  }
 
-    .search {
-        float: left;
-        width: 50%;
-    }
 
-    .travel {
-        float: left;
-        width: 50%;
-    }
+  .main-nav {
+    text-align: center;
+  }
 
-    .favorite-spots {
-        float: left;
-        width: 50%;
-    }
+  .main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+  }
 
-    .photo-gallery {
-        float: left;
-        width: 50%;
-    }
+  .marketing,
+  .search,
+  .travel,
+  .favorite-spots,
+  .photo-gallery,
+  .favorite-spots,
+  .calculator,
+  .satisfied-clients {
+    min-height: 375px;
+    line-height: 1.5em;
+  }
 
-    .calculator {
-        float: left;
-        width: 50%;
-    }
-    .satisfied-clients {
-        float: left;
-        width: 50%;
-    }
-    .get-in-touch {
-        display: block;
-        padding-top: 1.5em;
-        overflow: auto;
-        width: 100%;
-    }
+  .marketing {
+    float: left;
+    width: 50%;
+  }
 
-    .get-in-touch ul {
-        display: block;
-        text-align: center;
-    }
+  .search {
+    float: left;
+    width: 50%;
+  }
 
-    .get-in-touch li {
-        line-height: .75em;
-        padding: .25em;
-        text-align: center;
-        margin-top: .25em;
-    }
+  .travel {
+    float: left;
+    width: 50%;
+  }
 
-    .main-footer .name {
-        display: block;
-        padding: 10px;
-    }
+  .favorite-spots {
+    float: left;
+    width: 50%;
+  }
 
-    .main-footer li {
-        text-align: center;
-    }
+  .photo-gallery {
+    float: left;
+    width: 50%;
+  }
 
-    .main-footer .name {
-        float: left;
-        width: 50%;
-    }
+  .calculator {
+    float: left;
+    width: 50%;
+  }
 
-    .main-footer .footer-column-right {
-        float: right;
-        width: 50%;
-    }
+  .get-in-touch {
+    display: block;
+    padding-top: 1.5em;
+    overflow: auto;
+    width: 100%;
+  }
 
-    .main-footer .footer-link {
-        display: none;
-    }
-    
-    .main-footer .footer-nav {
-        display: block; 
-    }
-   .main-footer .footer-nav li {
-        display: inline-block;
-       padding-left: 1.75em;
-    }
+  .get-in-touch ul {
+    display: block;
+    text-align: center;
+  }
+
+  .get-in-touch li {
+    line-height: .75em;
+    padding: .25em;
+    text-align: center;
+    margin-top: .25em;
+  }
+
+  .main-footer .name {
+    display: block;
+    padding: 10px;
+  }
+
+  .main-footer li {
+    align-items: right;
+  }
+
+  .main-footer .name {
+    float: left;
+    width: 40%;
+  }
+
+  .main-footer .footer-column-right {
+    float: right;
+    width: 60%;
+  }
+
+  .main-footer .footer-link {
+    display: none;
+  }
+
+  .main-footer .footer-nav {
+    display: block;
+  }
+
+  .main-footer .footer-nav li {
+    display: inline-block;
+    float: right;
+    padding-left: 2em;
+  }
+
+  #clients {
+    max-width: 50%;
+  }
 
 }
 
 @media (min-width: 1024px) {
   .container {
-    width: 82%;
-    max-width: 1150px;
-  }
-    .marketing, .search, .travel, .favorite-spots, .photo-gallery, .favorite-spots, .calculator {
-      margin: 0 1em;
+    width: 90%;
       }
-    .marketing {
-        float: left;
-        width: 30%;
-    }
 
-    .search {
+    .container h1 {
         float: left;
-        width: 30%;
+        margin-top: -.5em;
     }
-
-    .travel {
-        float: left;
-        width: 30%;
-    }
-
-    .favorite-spots {
-        float: left;
-        width: 30%;
-    }
-
-    .photo-gallery {
-        float: left;
-        width: 30%;
-    }
-
-    .calculator {
-        float: left;
-        width: 30%;
-    }
-    .satisfied-clients {
-        float: left;
-        width: 30%;
-    }
+nav ul {
+    display: inline-block;
+    font-size: 20px;
+    padding: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: right;
+    width: 50%;
 }
-               
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#satisfied-clients">Satisfied Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul> 
+        </nav>
+  .travel,
+  .calculator {
+    margin-right: 0;
+  }
+
+  .marketing {
+    float: left;
+    width: 33.333%;
+  }
+
+  .search {
+    float: left;
+    width: 33.333%;
+  }
+
+  .travel {
+    float: left;
+    width: 33.333%;
+  }
+
+  .favorite-spots {
+    float: left;
+    width: 33.333%;
+  }
+
+  .photo-gallery {
+    float: left;
+    width: 33.333%;
+  }
+
+  .calculator {
+    float: left;
+    width: 33.333%;
+  }
+
+}
