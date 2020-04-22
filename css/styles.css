@@ -15,6 +15,11 @@ body {
   letter-spacing: .07em;
   box-sizing: border-box;
 }
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 img {
   max-width: 100%;
@@ -33,6 +38,10 @@ main::after {
   clear: both;
   display: table;
 }
+.satisfied-clients {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 #clients {
   display: block;
@@ -42,6 +51,14 @@ main::after {
 #clients img {
   display: block;
   margin: 0 auto;
+}
+
+.clients ul {
+    margin: auto;
+}
+.clients li {
+    width: 60%;
+    margin: 0 auto;
 }
 
 .name {
@@ -160,12 +177,12 @@ h3 {
 .travel p,
 .favorite-spots p,
 .photo-gallery p,
-.favorite-spots p .satisfied-clients p {
+.favorite-spots p {
 
-  display: block;
-  padding-left: 10px;
-  padding-right: 0;
-  margin: 0 auto 0 auto;
+    display: block;
+    padding-left: 10px;
+    padding-right: 0;
+    margin: 0 auto 0 auto;
 }
 
 .marketing,
@@ -193,25 +210,42 @@ h3 {
   border: solid 2px #d9e4ea;
 }
 
-
 .travel h3 {
   text-align: center;
 }
-
-
 
 .favorite-spots h3 {
   text-align: center;
 }
 
-
-
 .calculator h3 {
   text-align: center;
 }
-
+/*
+.satisfied-clients {
+    display: block;
+    width: 60%;
+    align-content: centered;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    margin-left: 2em;
+    float: none;
+ }
+*/
+.satisfied-clients {
+    display: block;
+    margin: auto;
+    width: 100%;
+    font-size: .8em;
+    padding-bottom: 1em;
+    border: 1px outset black;
+}
 .satisfied-clients h3 {
   text-align: center;
+}
+
+.satisfied-clients ul {
+    text-align: center;
 }
 
 .get-in-touch {
@@ -361,7 +395,12 @@ h3 {
     float: left;
     width: 50%;
   }
-
+    .satisfied-clients {
+        margin: 0 auto 30px;
+        width: 60%;
+        
+        }
+    
   .get-in-touch {
     display: block;
     padding-top: 1.5em;
@@ -372,6 +411,7 @@ h3 {
   .get-in-touch ul {
     display: block;
     text-align: center;
+    
   }
 
   .get-in-touch li {
@@ -410,7 +450,6 @@ h3 {
 
   .main-footer .footer-nav li {
     display: inline-block;
-    float: right;
     padding-left: 2em;
   }
 
@@ -430,23 +469,12 @@ h3 {
         margin-top: -.5em;
     }
 nav ul {
-    display: inline-block;
     font-size: 20px;
     padding: 25px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    float: right;
     align-items: right;
-    width: 50%;
-}
-    <nav class="clearfix">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#satisfied-clients">Satisfied Clients</a></li>
-            <li><a href="#contact">Contact</a></li>
-
-        </ul> 
-        </nav>
+   }
+    
   .travel,
   .calculator {
     margin-right: 0;

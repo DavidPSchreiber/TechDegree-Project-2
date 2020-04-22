@@ -11,18 +11,22 @@
 </head>
 
 <body>
-    <header class="main-header">
+<header class="main-header">
         <div class="container">
-            <h1>
-                David Schreiber
-            </h1>
-            <nav>
-                <ul class="main-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+			  <div class="nav-container clearfix">
+					<h1 id="top">
+						David Schreiber
+					</h1>
+					<nav>
+						<ul class="main-nav">
+							<li><a href="#top">Home</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+                             <li><a href="#clients">Clients</a></li>
+							<li><a href="#contact">Contact</a></li>
+                           
+						</ul>
+					</nav>
+			  </div>
             <div class="bio-container">
                 <img src="images/David-Cancun.JPG" alt="Photo of David a Mexican resort" class="bio-image">
                 <p class="bio">Hello there! I'm a front-end developer in the making. I greatly enjoy the elegance and
@@ -33,7 +37,6 @@
                     front-end
                     development with gusto!</p>
             </div>
-
         </div>
     </header>
     <!-- .main-header -->
@@ -108,16 +111,17 @@
         </main>
         <!-- end of main -->
 
-        <div id="clients" class="satisfied-clients">
+        <div class="satisfied-clients">
             <img src="images/satisfied-clients-image.png" alt="police lineup of satisfied customers"
                 class="satisfied-clients-image">
-            <h3>
-                Just a few of our Satisfied Customers
-            </h3>
-            <p>Fuzzy McGee's Hair Salon, Frankie "Bologna" Baloney's Deli, Increase the Piece Pie Shop, Bad Air Day
-                Filtration Systems,
-                No Foolin': Home of Practical Jokes.</p>
-
+            <h3 id="clients">Satisfied Customers</h3>
+            <ol> 
+                <li>Fuzzy McGee's Hair Salon</li>
+                <li>Frankie "Bologna" Baloney's Deli</li>
+                <li>Increase the Piece Pie Shop</li>
+                <li> Bad Air Day Filtration Systems</li>
+                <li> No Foolin': Home of Practical Jokes</li>
+            </ol>
         </div>
         <!-- end of satisfied-clients container -->
 
@@ -145,9 +149,12 @@
                 <a class="footer-link" href="#">back to top</a>
                 <nav>
                     <ul class="footer-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a>
+                        <li><a href="#clients">Clients</a></li>
                         <li><a href="#contact">Contact</a></li>
+                                                              
+                        
                     </ul>
                 </nav>
             </div>
